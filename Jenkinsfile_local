@@ -6,7 +6,7 @@ node{
     
       def mvnHome =  tool name: 'MAVEN_HOME', type: 'maven'   
       echo mvnHome
-      sh "${mvnHome}/bin/mvn package"
+      bat "${mvnHome}/bin/mvn package"
       echo 'welcome'
    }
   
